@@ -1,0 +1,174 @@
+.contact {
+  padding: 130px 0 86px 0;
+
+  .container {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      right: -30px;
+      bottom: -30px;
+      width: 104px;
+      height: 137px;
+      background-image: url("data:image/svg+xml,%3Csvg width='104' height='137' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 68.5 35.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 79.5 35.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 90.5 35.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 101.5 35.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 57.5 35.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 46.5 35.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 35.5 35.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 24.5 35.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 13.5 35.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 2.5 35.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 68.5 24.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 79.5 24.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 90.5 24.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 101.5 24.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 57.5 24.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 46.5 24.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 35.5 24.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 24.5 24.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 13.5 24.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 2.5 24.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 68.5 13.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 79.5 13.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 90.5 13.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 101.5 13.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 57.5 13.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 46.5 13.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 35.5 13.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 24.5 13.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 13.5 13.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 2.5 13.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 68.5 2.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 79.5 2.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 90.5 2.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 101.5 2.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 57.5 2.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 46.5 2.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 35.5 2.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 24.5 2.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 13.5 2.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 2.5 2.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 68.5 46.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 79.5 46.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 90.5 46.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 101.5 46.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 57.5 46.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 46.5 46.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 35.5 46.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 24.5 46.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 13.5 46.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 2.5 46.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 68.5 57.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 79.5 57.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 90.5 57.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 101.5 57.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 57.5 57.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 46.5 57.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 35.5 57.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 24.5 57.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 13.5 57.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 2.5 57.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 68.5 101.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 79.5 101.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 90.5 101.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 101.5 101.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 57.5 101.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 46.5 101.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 35.5 101.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 24.5 101.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 13.5 101.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 2.5 101.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 68.5 68.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 79.5 68.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 90.5 68.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 101.5 68.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 57.5 68.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 46.5 68.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 35.5 68.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 24.5 68.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 13.5 68.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 2.5 68.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 68.5 112.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 79.5 112.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 90.5 112.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 101.5 112.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 57.5 112.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 46.5 112.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 35.5 112.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 24.5 112.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 13.5 112.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 2.5 112.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 68.5 79.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 79.5 79.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 90.5 79.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 101.5 79.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 57.5 79.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 46.5 79.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 35.5 79.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 24.5 79.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 13.5 79.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 2.5 79.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 68.5 123.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 79.5 123.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 90.5 123.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 101.5 123.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 57.5 123.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 46.5 123.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 35.5 123.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 24.5 123.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 13.5 123.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 2.5 123.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 68.5 90.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 79.5 90.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 90.5 90.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 101.5 90.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 57.5 90.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 46.5 90.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 35.5 90.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 24.5 90.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 13.5 90.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 2.5 90.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 68.5 134.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 79.5 134.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 90.5 134.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 101.5 134.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 57.5 134.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 46.5 134.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 35.5 134.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 24.5 134.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 13.5 134.5)' fill='%23E9E9E9'/%3E%3Ccircle r='2.5' transform='matrix(-1 0 0 1 2.5 134.5)' fill='%23E9E9E9'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .contact-wrapper {
+    background: linear-gradient(0deg, #D9D9DB, #D9D9DB);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 396px;
+      height: 116px;
+      background-image: url("data:image/svg+xml,%3Csvg width='396' height='116' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M764-304c0 231.96-177.201 420-395.789 420S0-42.04 0-274s177.201-420 395.789-420S764-535.96 764-304Z' fill='%23296992'/%3E%3C/svg%3E");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .contact-content {
+    padding: 152px 96px 174px 460px;
+    position: relative;
+    z-index: 2;
+
+    .contact-content__text {
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 1.5;
+      text-align: right;
+      color: #34393D;
+
+      a {
+        padding: 16px 78px;
+        font-family: 'Open Sans Hebrew';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        color: #FFFFFF;
+        background: #F89A1F;
+        border-radius: 6px;
+        transition: all .3s;
+
+        &:hover {
+          background-color: #80C0E9;
+        }
+      }
+
+      &.mobile {
+        display: none;
+      }
+    }
+
+    .mobile-btn {
+      display: none;
+    }
+  }
+
+  .contact-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .desktop {
+      display: block;
+    }
+
+    .mobile {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .contact {
+    padding: 80px 0;
+
+    .container {
+      &:before {
+        right: 8px;
+        bottom: -16px;
+        width: 55px;
+        height: 72px;
+      }
+
+      .contact-img {
+        position: relative;
+
+        img {
+          margin: 0 auto;
+        }
+
+        .mobile {
+          display: block;
+          position: absolute;
+          width: 290px;
+          bottom: 0;
+          right: 0;
+          left: 0;
+        }
+
+        .desktop {
+          display: none;
+        }
+      }
+
+      .contact-content {
+        padding: 0;
+        height: 579px;
+        width: 200px;
+        margin: 0 auto;
+
+
+        .contact-content__text {
+          display: none;
+
+          &.mobile {
+            display: block;
+            font-size: 21px;
+            text-align: center;
+            padding: 97px 0 10px;
+          }
+        }
+
+        .mobile-btn {
+          display: block;
+          width: 140px;
+          margin: 0 auto;
+          padding: 13px 0;
+          font-family: "Open Sans Hebrew";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          text-align: center;
+          color: #fff;
+          background: #f89a1f;
+          border-radius: 6px;
+          transition: all .3s;
+
+          &:hover {
+            background-color: #80C0E9;
+          }
+        }
+      }
+
+      .contact-wrapper {
+        background: none;
+
+        &:before {
+          background-image: none;
+        }
+      }
+    }
+  }
+}

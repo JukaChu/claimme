@@ -1,0 +1,39 @@
+@import "components/vars";
+@import "components/reset";
+@import "components/global";
+
+
+// Header
+@import "components/header/header";
+
+// Footer  
+@import "components/footer/footer";
+
+// Common
+@import "components/common/fonts";
+@import "components/common/button";
+@import "components/common/info-gallary";
+@import "components/common/contact-btn";
+
+
+
+
+// Sections
+@import "components/sections/main-section";
+@import "components/sections/hero";
+@import "components/sections/about";
+@import "components/sections/offer";
+@import "components/sections/instruction";
+@import "components/sections/info-company";
+@import "components/sections/contact";
+@import "components/sections/faq";
+@import "components/sections/warning";
+
+
+@import "slick";
+
+
+
+
+
+

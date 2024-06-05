@@ -19,9 +19,14 @@ body{
 }
 
 .container{
-    max-width: 1110px;
+    max-width: 1520px;
     margin: 0 auto;
     // overflow-x: hidden;
+}
+.header {
+    .container {
+        max-width: 1140px;
+    }
 }
 
 

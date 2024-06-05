@@ -1,5 +1,27 @@
 $(document).ready(function () {
 
+    let cloudBtn = [...document.querySelectorAll('.single-cloud__text')];
+
+    function changeCloud() {
+        if (cloudBtn.length) {
+            cloudBtn.forEach((btn, k) => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    if (btn.closest('.single-cloud').classList.contains('open')) {
+                        btn.closest('.single-cloud').classList.remove('open');
+                    } else {
+                        btn.closest('.single-cloud').classList.add('open');
+
+                    }
+                })
+            })
+        }
+    }
+
+    changeCloud();
+
+
     $('#changecompany input').change(function () {
         var radioValue = $("input[name='company']:checked").val();
         $('.third-screen__button').addClass('hidden');

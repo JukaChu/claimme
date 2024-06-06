@@ -398,6 +398,7 @@ $bg2: #cde6f7;
     width: 100%;
     max-width: 100%;
     border-radius: 0;
+    margin-bottom: 0;
 
     &::before, &::after {
       content: none;
@@ -410,7 +411,6 @@ $bg2: #cde6f7;
       line-height: 160%;
       text-align: center;
       color: #FFFFFF;
-      padding: 92px 93px;
 
 
     }
@@ -418,49 +418,49 @@ $bg2: #cde6f7;
 }
 
 .marquee-cont {
-  animation: scrolling var(--marquee-animation-duration) linear infinite;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  flex-direction: row-reverse;
+  width: 100%;
 }
 
-.marquee-cont>div {
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  width: var(--marquee-element-width);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start
+.marquee-cont > div {
+  width: 100%;
 }
 
+.warning-big-image {
+  width: 100%;
+  height: 0;
+  padding-top: 37.08%;
+  position: relative;
 
-@keyframes scrolling {
-  0% {
-    transform: translateX(0)
+  &::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: inline-block;
+    content: '';
+    background: rgba(30, 84, 118, 0.28);
+
   }
 
-  100% {
-    transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+  .img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    backface-visibility: hidden;
+    appearance: none;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center bottom;
+    }
   }
 }
 
-:root {
-  --marquee-width: 100vw;
-  --marquee-height: 20vh;
-  --marquee-elements-displayed: 1;
-  --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
-  --marquee-animation-duration: calc(var(--marquee-elements) * 9s)
-}
+

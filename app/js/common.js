@@ -22,6 +22,27 @@ $(document).ready(function () {
     changeCloud();
 
 
+    //marquee
+    var marqueeContent = document.querySelector(".marquee-cont");
+
+    function marqqueFnc() {
+        if (marqueeContent) {
+            var root = document.documentElement;
+            var marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+
+
+            root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+            for (var i = 0; i < marqueeElementsDisplayed; i++) {
+                marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+            }
+        }
+    }
+
+    marqqueFnc();
+    // marque
+
+
     $('#changecompany input').change(function () {
         var radioValue = $("input[name='company']:checked").val();
         $('.third-screen__button').addClass('hidden');
@@ -94,7 +115,6 @@ $(document).ready(function () {
             }
         });
     });
-
 
 
     $(window).on('scroll', function () {

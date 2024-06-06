@@ -398,7 +398,10 @@ $bg2: #cde6f7;
     width: 100%;
     max-width: 100%;
     border-radius: 0;
-    padding: 92px 93px;
+
+    &::before, &::after {
+      content: none;
+    }
 
     .warning-header__text {
       font-style: normal;
@@ -407,8 +410,57 @@ $bg2: #cde6f7;
       line-height: 160%;
       text-align: center;
       color: #FFFFFF;
+      padding: 92px 93px;
 
 
     }
   }
+}
+
+.marquee-cont {
+  animation: scrolling var(--marquee-animation-duration) linear infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
+
+.marquee-cont>div {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: var(--marquee-element-width);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start
+}
+
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0)
+  }
+
+  100% {
+    transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements)));
+  }
+}
+
+:root {
+  --marquee-width: 100vw;
+  --marquee-height: 20vh;
+  --marquee-elements-displayed: 1;
+  --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+  --marquee-animation-duration: calc(var(--marquee-elements) * 9s)
 }

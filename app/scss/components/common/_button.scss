@@ -1,14 +1,35 @@
-.btn{
-    font-family: 'Open Sans Hebrew';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    color: #FFFFFF;
-    background: #F89A1F;
-    border-radius: 6px;
-    transition: all .3s;
+.btn {
+  font-family: 'Open Sans Hebrew';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+  background: #F89A1F;
+  border-radius: 6px;
+  transition: all .3s;
 
-    &:hover{
-        background-color: #80C0E9;
+  &.btn--blue {
+    background: #1E5476;
+    border: 1px solid #1E5476;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0);
+      color: #1E5476;
     }
+  }
+
+  &.btn--trans {
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #F89A1F;
+    color: #F89A1F;
+
+    &:hover {
+      background: #F89A1F;
+      color: #fff;
+    }
+  }
+
+  &:hover {
+    background-color: #80C0E9;
+  }
 }

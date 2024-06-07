@@ -97,12 +97,14 @@ $(document).ready(function () {
 
 
     $(window).on('scroll', function () {
-        console.log()
-        if ($(window).scrollTop() > $('.about').offset().top) {
-            $('.contact-btn').addClass('show');
-        } else {
-            $('.contact-btn').removeClass('show');
+        if (document.querySelector('.about')) {
+            if ($(window).scrollTop() > $('.about').offset().top) {
+                $('.contact-btn').addClass('show');
+            } else {
+                $('.contact-btn').removeClass('show');
+            }
         }
+
     });
 
 
@@ -119,6 +121,51 @@ $(document).ready(function () {
         });
     }
 
+
+    let choiceBlock = document.querySelector('.claim-choice');
+
+    function choicePage() {
+        if (choiceBlock) {
+            let choiceBtns = [...choiceBlock.querySelectorAll('.general-choice .select-type .btn')];
+            let formLeftBtn = choiceBlock.querySelector('.left-choice__form .btn');
+
+            let stepLeftBtn = [...choiceBlock.querySelectorAll('.choice-block__steps .step')];
+
+            choiceBtns.forEach((btn) => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    let rule = btn.dataset.rule;
+
+                    let ruleBlock = document.querySelector(`.${rule}`);
+                    ruleBlock.classList.add('choiced');
+                })
+            });
+
+            formLeftBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                document.querySelector('.left-choice').classList.add('step-2');
+                stepLeftBtn.forEach((bt, k) => {
+                    bt.classList.remove('selected');
+                    if (k === 1) {
+                        bt.classList.add('selected');
+                    }
+                });
+            });
+
+
+            let formRightBack = choiceBlock.querySelector('.right-choice .back-step');
+            formRightBack.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+
+                document.querySelector('.choice-block.choiced').classList.remove('choiced');
+            })
+        }
+    }
+
+    choicePage();
 });
 
 

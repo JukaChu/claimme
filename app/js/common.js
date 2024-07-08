@@ -130,6 +130,24 @@ $(document).ready(function () {
             let formLeftBtn = choiceBlock.querySelector('.left-choice__form .btn');
 
             let stepLeftBtn = [...choiceBlock.querySelectorAll('.choice-block__steps .step')];
+            let stepRightBtn = [...choiceBlock.querySelectorAll('.right-choice .choice-block__steps .step')];
+
+            let selectCheckbox = [...document.querySelectorAll('.select-insurance')];
+
+            selectCheckbox.forEach((block) => {
+                let inputsCheck = [...block.querySelectorAll('input')];
+                inputsCheck.forEach((inp, k) => {
+                    inp.addEventListener('click', (e) => {
+                        inputsCheck.forEach((inp2, l) => {
+                            if (l === k) {
+
+                            } else {
+                                inp2.checked = false;
+                            }
+                        })
+                    })
+                })
+            });
 
             choiceBtns.forEach((btn) => {
                 btn.addEventListener('click', (e) => {
@@ -156,11 +174,43 @@ $(document).ready(function () {
 
 
             let formRightBack = choiceBlock.querySelector('.right-choice .back-step');
+            let formRightBack2 = choiceBlock.querySelector('.right-choice .back-step2');
+            let formRightNext = choiceBlock.querySelector('.right-choice .next-step');
             formRightBack.addEventListener('click', (e) => {
                 e.preventDefault();
                 e.stopPropagation();
 
                 document.querySelector('.choice-block.choiced').classList.remove('choiced');
+            });
+
+            formRightBack2.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                document.querySelector('.choice-block.choiced').classList.remove('step-2');
+
+                stepRightBtn.forEach((bt, k) => {
+                    bt.classList.remove('selected');
+                    if (k === 0) {
+                        bt.classList.add('selected');
+                    }
+                });
+            });
+            formRightNext.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                let inputs = e.target.closest('.left-choice__cont').querySelector('input:checked');
+
+                if (inputs) {
+                    document.querySelector('.choice-block.choiced').classList.add('step-2');
+                    stepRightBtn.forEach((bt, k) => {
+                        bt.classList.remove('selected');
+                        if (k === 1) {
+                            bt.classList.add('selected');
+                        }
+                    });
+                }
+
+
             })
         }
     }

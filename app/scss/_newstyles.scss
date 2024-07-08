@@ -1141,6 +1141,59 @@ body {
   }
 }
 
+.select-insurance {
+  &.select-insurance__image {
+    justify-content: center;
+
+    .single-insurance {
+      border-width: 3px;
+      box-shadow: none;
+
+      label {
+        padding: 10px;
+        background: rgba(255, 255, 255, 0) !important;
+      }
+      &:has(input:checked) {
+        border-color: #F89A1F;
+        box-shadow: 0 0 6px 1px #f89a1f96
+
+      }
+      .im {
+        height: 65px;
+        width: auto;
+        display: flex;
+
+        img {
+          height: 100%;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+.right-choice {
+  &.step-2 {
+    .left-choice__cont {
+      transform: translate(0, 110%);
+
+      &.left-choice__cont--second {
+        transform: translate(-50%, 0);
+      }
+    }
+  }
+
+}
+
+.left-choice__cont--second {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 110%);
+}
+
 .select-buttons {
   width: 100%;
   max-width: 540px;
@@ -1201,6 +1254,36 @@ body {
           filter: brightness(100);
         }
       }
+    }
+  }
+}
+
+.select-buttons {
+  position: relative;
+
+
+}
+
+.sel-btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .btn-external {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 55px;
+    width: 255px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #f89a1f;
+    &:hover {
+      background: rgba(255, 255, 255, 0);
+      color: #f89a1f;
     }
   }
 }
@@ -1281,6 +1364,9 @@ body {
 }
 
 @media screen and (max-width: 1650px) {
+  .select-insurance.select-insurance__image .single-insurance .im {
+    height: 45px;
+  }
   .left-choice__thanks .log {
     width: 320px;
   }
@@ -1346,6 +1432,9 @@ body {
 }
 
 @media screen and (max-width: 1450px) {
+  .sel-btns .btn-external {
+    height: 45px;
+  }
   .thanks-choice h1 {
     font-size: 32px;
   }
@@ -1461,6 +1550,18 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
+  .sel-btns {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .btn-external {
+      position: relative;
+      left: auto;
+      bottom: auto;
+    }
+  }
   .single-weekly-graph__text .ic {
     width: 80px;
     height: 55px;
@@ -1563,7 +1664,31 @@ body {
   }
 }
 
+
 @media screen and (max-width: 767px) {
+  .right-choice {
+
+    .left-choice__cont {
+      display: flex;
+    }
+    .left-choice__cont.left-choice__cont--second {
+      transform: none;
+      padding-left: 0;
+      padding-right: 0;
+      position: static;
+      display: none;
+    }
+    &.step-2 {
+      .left-choice__cont {
+        transform: none;
+        display: none;
+        &.left-choice__cont--second {
+          transform: none;
+          display: flex;
+        }
+      }
+    }
+  }
   .thanks-choice {
     margin-top: 0;
     padding-top: 30px;

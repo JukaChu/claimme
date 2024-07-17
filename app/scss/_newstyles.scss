@@ -1965,3 +1965,20 @@ body {
   }
 
 }
+.anim-stage > * {
+  animation-fill-mode: forwards !important;
+  opacity: 0;
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+html {
+  scroll-behavior: initial;
+}
+.info-company {
+  padding-top: 70px;
+  margin-top: -70px;
+}
